@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+.Python
+.pytest_cache/
+pip-wheel-metadata/
+*.egg-info/
+*.egg
+env/
+venv/
+.venv/
+.python-version
+
+# Local env / secrets
+.env
+
+# Node/Vite frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
