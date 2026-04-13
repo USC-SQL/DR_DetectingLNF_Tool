@@ -1,0 +1,235 @@
+{
+  "navigation_path": [
+    {
+      "step": 1,
+      "element": "Email Address or Username field",
+      "description": "Input field for entering the email address or username."
+    },
+    {
+      "step": 2,
+      "element": "Password field",
+      "description": "Input field for entering the password."
+    },
+    {
+      "step": 3,
+      "element": "Sign In button",
+      "description": "Button to submit the sign-in form."
+    },
+    {
+      "step": 4,
+      "element": "Cancel button",
+      "description": "Button to cancel the sign-in process."
+    },
+    {
+      "step": 5,
+      "element": "Remember Me checkbox",
+      "description": "Checkbox to remember the user's login information."
+    },
+    {
+      "step": 6,
+      "element": "Create Account link",
+      "description": "Link to create a new Disney account."
+    },
+    {
+      "step": 7,
+      "element": "Walt Disney World logo",
+      "description": "Logo of the Walt Disney World brand."
+    },
+    {
+      "step": 8,
+      "element": "Forgot Password link",
+      "description": "Link to recover a forgotten password."
+    },
+    {
+      "step": 9,
+      "element": "Information icon",
+      "description": "Icon providing information about the email field."
+    },
+    {
+      "step": 10,
+      "element": "Help & Guest Services link",
+      "description": "Link to help and guest services page."
+    },
+    {
+      "step": 11,
+      "element": "Site Map link",
+      "description": "Link to the site map page."
+    },
+    {
+      "step": 12,
+      "element": "Terms of Use link",
+      "description": "Link to terms of use page."
+    },
+    {
+      "step": 13,
+      "element": "Legal Notices link",
+      "description": "Link to legal notices page."
+    },
+    {
+      "step": 14,
+      "element": "Privacy Policy link",
+      "description": "Link to privacy policy page."
+    },
+    {
+      "step": 15,
+      "element": "Do Not Sell My Info link",
+      "description": "Link to information about opting out of information selling."
+    },
+    {
+      "step": 16,
+      "element": "Children's Online Privacy link",
+      "description": "Link to children's online privacy information."
+    },
+    {
+      "step": 17,
+      "element": "Your California Privacy Rights link",
+      "description": "Link to California privacy rights page."
+    }
+  ],
+  "lnf_analysis": [
+    {
+      "transition": "browser -> 1",
+      "is_lnf": false,
+      "issue": "",
+      "why_it_fails": "",
+      "impact": "",
+      "one_sentence_reason": "The first focusable element is the logical starting point for a sign-in form."
+    },
+    {
+      "transition": "1 -> 2",
+      "is_lnf": false,
+      "issue": "",
+      "why_it_fails": "",
+      "impact": "",
+      "one_sentence_reason": "The transition from email/username to password field follows a logical top-to-bottom order."
+    },
+    {
+      "transition": "2 -> 3",
+      "is_lnf": true,
+      "issue": "Focus skips from the Password field to the Sign In button.",
+      "why_it_fails": "The logical flow should go to the Remember Me checkbox after the Password field.",
+      "impact": "Users might miss the Remember Me option due to unexpected focus order.",
+      "one_sentence_reason": "Focus order breaks the logical flow of completing the form options."
+    },
+    {
+      "transition": "3 -> 4",
+      "is_lnf": false,
+      "issue": "",
+      "why_it_fails": "",
+      "impact": "",
+      "one_sentence_reason": "The transition from the Sign In to Cancel button follows logical order."
+    },
+    {
+      "transition": "4 -> 5",
+      "is_lnf": true,
+      "issue": "Focus goes from the Cancel button to the Remember Me checkbox later.",
+      "why_it_fails": "Checkbox should be earlier in focus order to maintain logical form filling.",
+      "impact": "User might overlook form options before submission.",
+      "one_sentence_reason": "Logical order disruption affects form completion understanding."
+    },
+    {
+      "transition": "5 -> 6",
+      "is_lnf": false,
+      "issue": "",
+      "why_it_fails": "",
+      "impact": "",
+      "one_sentence_reason": "Focus moves to account creation, which is a logical alternative action."
+    },
+    {
+      "transition": "6 -> 7",
+      "is_lnf": false,
+      "issue": "",
+      "why_it_fails": "",
+      "impact": "",
+      "one_sentence_reason": "Moving to branding/logo element follows typical focus flow outside of form context."
+    },
+    {
+      "transition": "7 -> 8",
+      "is_lnf": true,
+      "issue": "Focus skips Forgot Password link.",
+      "why_it_fails": "Logical flow from password input to password recovery is expected.",
+      "impact": "Users could miss password recovery option.",
+      "one_sentence_reason": "The order bypasses a directly related form function."
+    },
+    {
+      "transition": "8 -> 9",
+      "is_lnf": true,
+      "issue": "Information icon should be before the email field.",
+      "why_it_fails": "Contextual information should precede the actionable input field.",
+      "impact": "Users might not see relevant help before entering data.",
+      "one_sentence_reason": "Contextual aids are important prior to data entry."
+    },
+    {
+      "transition": "9 -> 10",
+      "is_lnf": false,
+      "issue": "",
+      "why_it_fails": "",
+      "impact": "",
+      "one_sentence_reason": "Focus moving to footer links is expected as form interactions conclude."
+    },
+    {
+      "transition": "10 -> 11",
+      "is_lnf": false,
+      "issue": "",
+      "why_it_fails": "",
+      "impact": "",
+      "one_sentence_reason": "Footer navigation follows a logical left-to-right sequence."
+    },
+    {
+      "transition": "11 -> 12",
+      "is_lnf": false,
+      "issue": "",
+      "why_it_fails": "",
+      "impact": "",
+      "one_sentence_reason": "Logical progression through footer links."
+    },
+    {
+      "transition": "12 -> 13",
+      "is_lnf": false,
+      "issue": "",
+      "why_it_fails": "",
+      "impact": "",
+      "one_sentence_reason": "Legal navigation is consistent with footer semantics."
+    },
+    {
+      "transition": "13 -> 14",
+      "is_lnf": false,
+      "issue": "",
+      "why_it_fails": "",
+      "impact": "",
+      "one_sentence_reason": "Continuation through footer links provides comprehensive site information."
+    },
+    {
+      "transition": "14 -> 15",
+      "is_lnf": false,
+      "issue": "",
+      "why_it_fails": "",
+      "impact": "",
+      "one_sentence_reason": "Standard sequence checks through legal/rights links."
+    },
+    {
+      "transition": "15 -> 16",
+      "is_lnf": false,
+      "issue": "",
+      "why_it_fails": "",
+      "impact": "",
+      "one_sentence_reason": "Seamless progression through relevant privacy/legal topics."
+    },
+    {
+      "transition": "16 -> 17",
+      "is_lnf": false,
+      "issue": "",
+      "why_it_fails": "",
+      "impact": "",
+      "one_sentence_reason": "Final footer transition rounding off available legal/privacy information."
+    },
+    {
+      "transition": "17 -> browser",
+      "is_lnf": false,
+      "issue": "",
+      "why_it_fails": "",
+      "impact": "",
+      "one_sentence_reason": "Conclusion of focusable elements returns control back to the browser."
+    }
+  ]
+}

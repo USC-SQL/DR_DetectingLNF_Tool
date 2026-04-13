@@ -1,0 +1,46 @@
+I am evaluating Linear Navigation Failures (LNF) under WCAG Success Criterion 2.4.3, which requires that keyboard navigation follows an order that is logical, intuitive, and preserves meaning.
+
+For this analysis:
+
+- Consider keyboard focus transitions between sequential focusable elements (e.g., element N → N+1).
+- Also evaluate:
+  - Entry transition: browser → first focusable element
+  - Exit transition: last focusable element → browser
+- Assume a keyboard-only user who can see the screen.
+- Use a reading model of top-to-bottom, left-to-right (typical English reading order).
+  Within the same row: left → right, then move down to the next row.
+- The goal is that keyboard navigation should allow content to be consumed in the same meaningful order as a sighted mouse user.
+
+WCAG 2.4.3 is inherently subjective.
+
+Task:
+- First, list the keyboard navigation path.
+- Then evaluate transitions in order (browser → 1, 1 → 2, etc.).
+- Identify which transitions are Linear Navigation Failures (LNF).
+
+For each transition:
+- Set "is_lnf" to true or false
+- If true, explain the issue, why it fails, and its impact
+- If false, briefly explain why it is correct
+
+Return only valid JSON in this exact structure:
+
+{
+  "navigation_path": [
+    {
+      "step": 1,
+      "element": "...",
+      "description": "..."
+    }
+  ],
+  "lnf_analysis": [
+    {
+      "transition": "browser -> 1",
+      "is_lnf": true,
+      "issue": "...",
+      "why_it_fails": "...",
+      "impact": "...",
+      "one_sentence_reason": "..."
+    }
+  ]
+}
