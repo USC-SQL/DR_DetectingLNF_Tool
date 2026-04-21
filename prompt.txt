@@ -1,0 +1,43 @@
+Provided to you is a screenshot of the subject website Disney World. Each keyboard-navigable element is numerically labeled in the order a keyboard-only user would navigate through the webpage.
+
+Your task has two parts:
+
+1. Reconstruct the implemented keyboard navigation path from the screenshot.
+2. Evaluate Linear Navigation Failures (LNF) under WCAG Success Criterion 2.4.3.
+
+For the analysis:
+- Consider keyboard focus transitions between sequential focusable elements (for example, element N -> element N+1) 
+- Also evaluate:
+  - Entry transition: browser -> first focusable element
+  - Exit transition: last focusable element -> browser
+- Assume a keyboard-only user who can see the screen.
+- Use a reading model of top-to-bottom, left-to-right.
+- Within the same row, go left -> right, then move down to the next row.
+- The goal is that keyboard navigation should allow content to be consumed in the same meaningful order as a sighted mouse user.
+- WCAG 2.4.3 is inherently subjective, so make reasonable judgments and explain them clearly.
+
+Return only valid JSON in this exact structure:
+
+{
+  "navigation_path": [
+    {
+      "step": 1,
+      "element": "...",
+      "description": "..."
+    }
+  ],
+  "lnf_analysis": [
+    {
+      "transition": "browser -> 1",
+      "is_lnf": true,
+      "issue": "...",
+      "why_it_fails": "...",
+      "impact": "...",
+      "one_sentence_reason": "..."
+    }
+  ]
+}
+
+Rules:
+- Include every numbered element shown in the screenshot in navigation order.
+- For each transition, set is_lnf to true or false.
