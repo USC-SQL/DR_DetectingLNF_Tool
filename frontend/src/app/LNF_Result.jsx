@@ -126,16 +126,16 @@ function LNF_Result(){
 
           {displayItems.length > 0 ? (
             <div className="space-y-3">
-              {displayItems.map((item, index) => (
+              {displayItems.map((item) => (
                 <button
-                  key={`${item.transition}-${index}`}
+                  key={item.transition}
                   onClick={() => setSelectedLNF(item)}
                   className="w-full rounded-2xl border border-slate-200 bg-slate-50 p-4 text-left shadow-sm transition hover:-translate-y-0.5 hover:bg-indigo-50 hover:shadow-md"
                 >
                   <div className="flex items-start gap-4">
-                    <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-indigo-600 text-base font-bold text-white">
+                    {/* <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-indigo-600 text-base font-bold text-white">
                       {index + 1}
-                    </div>
+                    </div> */}
 
                     <div className="min-w-0 flex-1">
                       <div className="flex flex-wrap items-center gap-3">

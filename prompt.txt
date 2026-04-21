@@ -1,27 +1,20 @@
-I am evaluating Linear Navigation Failures (LNF) under WCAG Success Criterion 2.4.3, which requires that keyboard navigation follows an order that is logical, intuitive, and preserves meaning.
+Provided to you is a screenshot of the subject website Disney World. Each keyboard-navigable element is numerically labeled in the order a keyboard-only user would navigate through the webpage.
 
-For this analysis:
+Your task has two parts:
 
-- Consider keyboard focus transitions between sequential focusable elements (e.g., element N → N+1).
+1. Reconstruct the implemented keyboard navigation path from the screenshot.
+2. Evaluate Linear Navigation Failures (LNF) under WCAG Success Criterion 2.4.3.
+
+For the analysis:
+- Consider keyboard focus transitions between sequential focusable elements (for example, element N -> element N+1) 
 - Also evaluate:
-  - Entry transition: browser → first focusable element
-  - Exit transition: last focusable element → browser
+  - Entry transition: browser -> first focusable element
+  - Exit transition: last focusable element -> browser
 - Assume a keyboard-only user who can see the screen.
-- Use a reading model of top-to-bottom, left-to-right (typical English reading order).
-  Within the same row: left → right, then move down to the next row.
+- Use a reading model of top-to-bottom, left-to-right.
+- Within the same row, go left -> right, then move down to the next row.
 - The goal is that keyboard navigation should allow content to be consumed in the same meaningful order as a sighted mouse user.
-
-WCAG 2.4.3 is inherently subjective.
-
-Task:
-- First, list the keyboard navigation path.
-- Then evaluate transitions in order (browser → 1, 1 → 2, etc.).
-- Identify which transitions are Linear Navigation Failures (LNF).
-
-For each transition:
-- Set "is_lnf" to true or false
-- If true, explain the issue, why it fails, and its impact
-- If false, briefly explain why it is correct
+- WCAG 2.4.3 is inherently subjective, so make reasonable judgments and explain them clearly.
 
 Return only valid JSON in this exact structure:
 
@@ -44,3 +37,7 @@ Return only valid JSON in this exact structure:
     }
   ]
 }
+
+Rules:
+- Include every numbered element shown in the screenshot in navigation order.
+- For each transition, set is_lnf to true or false.
