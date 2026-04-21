@@ -1,4 +1,4 @@
-# 🔍 LNF Detector — WCAG 2.4.3 Navigation Analysis Tool
+# 🔍 LNF Detector — WCAG 2.4.3 Analysis Tool
 
 A tool for detecting **Linear Navigation Failures (LNF)** in webpages using screenshot input and LLM analysis.
 
@@ -32,3 +32,14 @@ Run `python app.py`
 cd frontend
 npm install
 npm run dev
+
+---
+
+### Example API Request
+
+```bash
+curl -X POST http://localhost:5000/api/analyze \
+  -F "image_file=@disneyworld.png" \
+  -F "prompt_file=@prompt.txt" \
+  -F "subject_name=Disney World" \
+  -o output.json
