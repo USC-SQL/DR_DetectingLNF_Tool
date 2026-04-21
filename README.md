@@ -32,6 +32,7 @@ Run `python app.py`
 cd frontend
 npm install
 npm run dev
+```
 
 ---
 
@@ -43,3 +44,4 @@ curl -X POST http://localhost:5000/api/analyze \
   -F "prompt_file=@prompt.txt" \
   -F "subject_name=Disney World" \
   -o output.json
+```
