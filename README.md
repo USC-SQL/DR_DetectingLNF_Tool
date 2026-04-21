@@ -4,6 +4,9 @@ A tool for detecting **Linear Navigation Failures (LNF)** in webpages using scre
 
 This project evaluates whether keyboard navigation follows a **meaningful, logical order**, as required by WCAG 2.4.3 (Focus Order).
 
+<img width="944" height="577" alt="image" src="https://github.com/user-attachments/assets/b6f3bf1e-83d0-4827-9d0b-b56e66a521c1" />
+
+
 ---
 
 ## Overview: How it works
