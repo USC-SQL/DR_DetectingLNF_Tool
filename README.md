@@ -28,9 +28,9 @@ This project evaluates whether keyboard navigation follows a **meaningful, logic
 
 ## Installation & Setup
 ### API Key Setup
-1. Create a .env file in the root directory
+1. Create a .env file in the root directory `touch .env`
 2. Add your API key:
-   ```bash OPENAI_API_KEY=your_api_key_here ```
+   `OPENAI_API_KEY=your_api_key_here `
    Replace `your_api_key_here` with your actual key
 
 ### Backend
