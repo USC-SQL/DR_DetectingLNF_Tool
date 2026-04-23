@@ -2,48 +2,48 @@
   "navigation_path": [
     {
       "step": 1,
-      "element": "Email Address or Username field",
-      "description": "First text input in the sign-in form, positioned on the left under the sign-in heading."
+      "element": "Email Address or Username input",
+      "description": "First text field in the sign-in form, located on the left of the first input row."
     },
     {
       "step": 2,
-      "element": "Password field",
-      "description": "Second text input in the same row, positioned to the right of the email/username field."
+      "element": "Password input",
+      "description": "Second text field in the sign-in form, located to the right of the email/username field."
     },
     {
       "step": 3,
       "element": "Sign In button",
-      "description": "Primary submit button on the right below the password field."
+      "description": "Primary action button on the right side below the password field."
     },
     {
       "step": 4,
       "element": "Cancel button",
-      "description": "Secondary button to the left of the Sign In button on the same row."
+      "description": "Secondary action button to the left of the Sign In button on the same row."
     },
     {
       "step": 5,
       "element": "Remember Me checkbox",
-      "description": "Checkbox below the input fields and left of the action buttons."
+      "description": "Checkbox below the input fields on the left side of the form."
     },
     {
       "step": 6,
       "element": "Create Account link",
-      "description": "Link below the 'Don't have a Disney account?' text in the lower part of the form."
+      "description": "Link below the divider and under the 'Don't have a Disney account?' text."
     },
     {
       "step": 7,
       "element": "Walt Disney World logo link",
-      "description": "Logo link positioned above the sign-in panel near the top center of the page."
+      "description": "Logo link centered above the sign-in panel near the top of the page."
     },
     {
       "step": 8,
       "element": "Forgot password? link",
-      "description": "Link aligned near the password label above the password field."
+      "description": "Link aligned to the right of the password label, above the password field."
     },
     {
       "step": 9,
-      "element": "Information icon/help trigger",
-      "description": "Small info icon next to the email/username label."
+      "element": "Information icon/help control for Email Address or Username",
+      "description": "Small icon adjacent to the email/username label, visually associated with that field."
     },
     {
       "step": 10,
@@ -58,32 +58,32 @@
     {
       "step": 12,
       "element": "Terms of Use link",
-      "description": "Third footer link in the footer row."
+      "description": "Third footer link in the bottom row."
     },
     {
       "step": 13,
       "element": "Legal Notices link",
-      "description": "Fourth footer link in the footer row."
+      "description": "Fourth footer link in the bottom row."
     },
     {
       "step": 14,
       "element": "Privacy Policy link",
-      "description": "Fifth footer link in the footer row."
+      "description": "Fifth footer link in the bottom row."
     },
     {
       "step": 15,
-      "element": "Do Not Sell My Personal Information link",
-      "description": "Sixth footer link in the footer row."
+      "element": "Do Not Sell My Info link",
+      "description": "Sixth footer link in the bottom row."
     },
     {
       "step": 16,
       "element": "Children's Online Privacy Policy link",
-      "description": "Seventh footer link in the footer row."
+      "description": "Seventh footer link in the bottom row."
     },
     {
       "step": 17,
       "element": "Your California Privacy Rights link",
-      "description": "Last footer link at the far right of the footer row."
+      "description": "Eighth footer link at the far right of the footer."
     }
   ],
   "lnf_analysis": [
@@ -93,7 +93,7 @@
       "issue": "",
       "why_it_fails": "",
       "impact": "",
-      "one_sentence_reason": "Starting keyboard focus on the first main form field is a logical entry point for this sign-in page."
+      "one_sentence_reason": "Starting focus in the first form field is acceptable because it places the keyboard user at the primary interactive content of the page."
     },
     {
       "transition": "1 -> 2",
@@ -101,31 +101,31 @@
       "issue": "",
       "why_it_fails": "",
       "impact": "",
-      "one_sentence_reason": "Moving from the left email/username field to the right password field follows expected left-to-right form order."
+      "one_sentence_reason": "Moving from the left email/username field to the right password field follows the expected left-to-right order within the same row."
     },
     {
       "transition": "2 -> 3",
       "is_lnf": true,
-      "issue": "Focus moves from the password field to the Sign In button before other visually earlier controls on the page are reached.",
-      "why_it_fails": "Under a top-to-bottom, left-to-right reading model, the next expected focus targets after the password field would be related nearby controls in visual order, including the Forgot password? link above and the Remember Me checkbox below-left before the right-side buttons; jumping directly to the rightmost Sign In button disrupts the meaningful visual sequence.",
-      "impact": "Keyboard users encounter controls in an order that does not match the visible layout, making the form feel unpredictable and increasing the chance that secondary options are overlooked.",
-      "one_sentence_reason": "This jump skips visually earlier items and breaks the expected reading/navigation order."
+      "issue": "Focus moves from the password field to the Sign In button before other controls that are earlier in visual reading order, including the Remember Me checkbox on the left and the Cancel button to the left of Sign In.",
+      "why_it_fails": "Under a top-to-bottom, left-to-right reading model, after the password field the next relevant controls on the next row would be Remember Me on the left and then Cancel before Sign In. Jumping directly to the rightmost primary button disrupts the linear sequence and does not preserve the visual/meaningful order of the form controls.",
+      "impact": "Keyboard users encounter actions before supporting options and before the left-side checkbox, making the form feel disjointed and increasing the chance they miss available choices.",
+      "one_sentence_reason": "This jump skips earlier-positioned controls and breaks the expected left-to-right, top-to-bottom reading order."
     },
     {
       "transition": "3 -> 4",
       "is_lnf": true,
-      "issue": "Focus moves from the rightmost Sign In button backward to the leftward Cancel button.",
-      "why_it_fails": "Within the same row, expected order is left-to-right, so Cancel should precede Sign In; reversing these adjacent buttons creates an illogical sequence relative to their visual placement.",
-      "impact": "Keyboard users may misinterpret button relationships, experience disorientation, or activate the wrong control because focus order does not match what they see.",
-      "one_sentence_reason": "The tab sequence reverses the visual left-to-right order of the action buttons."
+      "issue": "Focus reverses direction within the same row by moving from the rightmost Sign In button back to the left-side Cancel button.",
+      "why_it_fails": "Within a single horizontal row, logical reading order is left to right; Cancel appears before Sign In visually, so encountering Sign In first and then moving backward to Cancel is not intuitive.",
+      "impact": "Keyboard users may misinterpret the structure of the action row and can activate the primary action before discovering the secondary action.",
+      "one_sentence_reason": "The focus order moves right-to-left across the action buttons, which is opposite the expected reading sequence."
     },
     {
       "transition": "4 -> 5",
       "is_lnf": true,
-      "issue": "After reaching the action buttons, focus moves back up/left to the Remember Me checkbox.",
-      "why_it_fails": "The checkbox is visually earlier in the form flow than the buttons, so encountering it only after both buttons causes keyboard navigation to backtrack across the interface rather than proceed in reading order.",
-      "impact": "Users must mentally reconstruct the form layout and may miss the checkbox when progressing through the page, reducing efficiency and predictability.",
-      "one_sentence_reason": "This transition backtracks to a control that should have appeared before the buttons in visual order."
+      "issue": "After reaching the Cancel button on the right, focus jumps leftward and slightly upward to the Remember Me checkbox.",
+      "why_it_fails": "Remember Me is visually earlier in the row and should have been reached before the action buttons; placing it after both buttons creates a non-linear sequence that does not match how a sighted user would consume the form.",
+      "impact": "Users may overlook the checkbox until after passing the submit/cancel actions, reducing form comprehension and efficiency.",
+      "one_sentence_reason": "The checkbox is visually positioned before the buttons but is reached only after them, creating an illogical backward jump."
     },
     {
       "transition": "5 -> 6",
@@ -133,31 +133,31 @@
       "issue": "",
       "why_it_fails": "",
       "impact": "",
-      "one_sentence_reason": "Moving from the Remember Me checkbox to the Create Account link below continues downward through the form content."
+      "one_sentence_reason": "Moving from the Remember Me checkbox down to the Create Account link follows the general top-to-bottom flow of the page."
     },
     {
       "transition": "6 -> 7",
       "is_lnf": true,
-      "issue": "Focus jumps from the lower form area to the page logo at the top.",
-      "why_it_fails": "The logo is visually above the sign-in panel and would normally be encountered before the form if included in the tab order; placing it after lower form controls creates a large reverse jump that breaks the page's meaningful top-to-bottom sequence.",
-      "impact": "Keyboard users can lose context because focus appears to move backward to a previously passed region, making navigation feel erratic.",
-      "one_sentence_reason": "This is a major reverse jump from lower page content to a top-of-page element."
+      "issue": "Focus jumps from the lower Create Account link back up to the top-page Walt Disney World logo link.",
+      "why_it_fails": "The logo is visually above the form and should be encountered before the form controls if it is in the tab order; reaching it only after a lower form section breaks spatial and meaningful order.",
+      "impact": "Keyboard users are forced to revisit upper-page content after progressing downward, which is disorienting and interrupts task flow.",
+      "one_sentence_reason": "This is a major upward jump to content that is visually much earlier on the page."
     },
     {
       "transition": "7 -> 8",
       "is_lnf": true,
-      "issue": "Focus moves from the top logo down into the form to the Forgot password? link after the main inputs and buttons were already traversed.",
-      "why_it_fails": "The Forgot password? link is visually associated with the password label near the top of the form and should be encountered around the password field, not after lower content and the logo; this sequencing does not preserve the visible structure.",
-      "impact": "Users may miss recovery options at the point they are most relevant and experience confusion about where they are in the form.",
-      "one_sentence_reason": "The forgot-password link appears far later than its visual and contextual position suggests."
+      "issue": "Focus moves from the top logo down into the Forgot password? link, but bypasses the main form sequence and lands on a label-adjacent utility link late in the order.",
+      "why_it_fails": "Forgot password? is visually associated with the password label area near the top of the form and should be encountered around the password field, not after lower-page content and the top logo.",
+      "impact": "This makes the page feel unpredictably ordered and may cause users to miss contextual assistance when it would be most useful.",
+      "one_sentence_reason": "The link is contextually tied to the password area but is reached far later than its visual position suggests."
     },
     {
       "transition": "8 -> 9",
       "is_lnf": true,
-      "issue": "Focus moves from the right-side Forgot password? link to the left-side info icon near the email label.",
-      "why_it_fails": "Within the upper form area, a left-to-right reading model would place the info icon near the email field before the right-side password-related link; moving right-to-left across the row after later elements have already been visited is out of order.",
-      "impact": "Keyboard users must visually hunt for the new focus location and may not understand the relationship between controls.",
-      "one_sentence_reason": "This transition reverses the expected left-to-right order among the top form helpers."
+      "issue": "Focus moves from the Forgot password? link on the right to the information icon near the email label on the left, effectively jumping upward and leftward within an earlier part of the form.",
+      "why_it_fails": "The info icon is visually located near the first field label and should appear before or around the email field in a logical reading sequence, not after lower controls, the logo, and the forgot-password link.",
+      "impact": "Users encounter supplementary help for the first field only after most of the page has already been traversed, which undermines comprehension and predictability.",
+      "one_sentence_reason": "This transition returns to an earlier, upper-left contextual control that should have appeared near the start of the form."
     },
     {
       "transition": "9 -> 10",
@@ -165,7 +165,7 @@
       "issue": "",
       "why_it_fails": "",
       "impact": "",
-      "one_sentence_reason": "After the remaining upper-form helper control, moving to the first footer link continues generally downward to the next page region."
+      "one_sentence_reason": "After the final upper-page control, moving down to the first footer link is a reasonable continuation toward the bottom of the page."
     },
     {
       "transition": "10 -> 11",
@@ -173,7 +173,7 @@
       "issue": "",
       "why_it_fails": "",
       "impact": "",
-      "one_sentence_reason": "The footer links proceed left-to-right in a conventional horizontal sequence."
+      "one_sentence_reason": "The footer links proceed left to right in a standard horizontal sequence."
     },
     {
       "transition": "11 -> 12",
@@ -181,7 +181,7 @@
       "issue": "",
       "why_it_fails": "",
       "impact": "",
-      "one_sentence_reason": "This follows the visible left-to-right order of the footer navigation."
+      "one_sentence_reason": "This follows the visible left-to-right order of adjacent footer links."
     },
     {
       "transition": "12 -> 13",
@@ -189,7 +189,7 @@
       "issue": "",
       "why_it_fails": "",
       "impact": "",
-      "one_sentence_reason": "This is the expected next footer link in sequence."
+      "one_sentence_reason": "The focus order remains consistent with the displayed footer link sequence."
     },
     {
       "transition": "13 -> 14",
@@ -197,7 +197,7 @@
       "issue": "",
       "why_it_fails": "",
       "impact": "",
-      "one_sentence_reason": "Focus continues logically across the footer row from left to right."
+      "one_sentence_reason": "This is a normal left-to-right progression through the footer navigation."
     },
     {
       "transition": "14 -> 15",
@@ -205,7 +205,7 @@
       "issue": "",
       "why_it_fails": "",
       "impact": "",
-      "one_sentence_reason": "This maintains the visible horizontal order of footer links."
+      "one_sentence_reason": "The transition preserves the visible order of footer items."
     },
     {
       "transition": "15 -> 16",
@@ -213,7 +213,7 @@
       "issue": "",
       "why_it_fails": "",
       "impact": "",
-      "one_sentence_reason": "The next footer link appears in correct left-to-right order."
+      "one_sentence_reason": "Focus continues logically across the footer links from left to right."
     },
     {
       "transition": "16 -> 17",
@@ -221,7 +221,7 @@
       "issue": "",
       "why_it_fails": "",
       "impact": "",
-      "one_sentence_reason": "This is the last footer link in the visible footer sequence."
+      "one_sentence_reason": "This is the expected final left-to-right step within the footer row."
     },
     {
       "transition": "17 -> browser",
@@ -229,7 +229,7 @@
       "issue": "",
       "why_it_fails": "",
       "impact": "",
-      "one_sentence_reason": "Exiting the final focusable element back to the browser chrome is expected once page content is exhausted."
+      "one_sentence_reason": "Exiting to browser chrome after the last page focusable element is expected and does not indicate a page-level focus-order problem."
     }
   ]
 }
