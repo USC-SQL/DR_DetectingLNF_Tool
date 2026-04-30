@@ -31,19 +31,27 @@ def get_image_media_type(image_path):
 
 @app.route("/api/analyze", methods=["POST"])
 def analyze():
-    #reading data from frontend keys
-    image_file = request.files.get("image_file")
+    #reading data from form-data
+
+    # Get multiple files (plural)
+    image_files = request.files.getlist("image_files[]")
+    # If none found, try single file (singular)
+    if not image_files:
+        single = request.files.get("image_file")
+        if single:
+            image_files = [single] 
+
     prompt_file = request.files.get("prompt_file")
     subject_name = request.form.get("subject_name", "")
 
-    if not image_file:
-        return jsonify({"error": "image file is required"}), 400
+    if not image_files:
+        return jsonify({"error": "image files are required"}), 400
     if not prompt_file:
         return jsonify({"error": "prompt file is required"}), 400
     
+    #process form inputs
     prompt_text = prompt_file.read().decode("utf-8")
-    image = encode_image(image_file)
-    media_type = get_image_media_type(image_file.filename)
+
 
 
     full_prompt = f"""
@@ -51,6 +59,23 @@ Subject name: {subject_name}
 
 {prompt_text}
 """.strip()
+    
+    # Build content list: add images first, then add text prompt
+    content = []
+    for image_file in image_files:
+        encoded = encode_image(image_file)
+        media_type = get_image_media_type(image_file.filename)
+        content.append({
+            "type": "image_url",
+            "image_url": {
+                "url": f"data:{media_type};base64,{encoded}"
+            }
+        })
+
+    content.append({
+        "type": "text",
+        "text": full_prompt
+    })
 
     try:
         response = client.chat.completions.create(
@@ -62,18 +87,7 @@ Subject name: {subject_name}
                 },
                 {
                     "role": "user",
-                    "content": [
-                        {
-                            "type": "image_url",
-                            "image_url": {
-                                "url": f"data:{media_type};base64,{image}"
-                            }
-                        },
-                        {
-                            "type": "text",
-                            "text": full_prompt
-                        }
-                    ]
+                    "content": content
                 }
             ],
             response_format={"type": "json_object"}

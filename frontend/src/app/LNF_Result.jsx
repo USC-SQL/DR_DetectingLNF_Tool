@@ -5,9 +5,10 @@ import { useNavigate , useLocation} from 'react-router-dom';
 function LNF_Result(){
     const navigate = useNavigate();
     const location = useLocation(); //useLocation to read the state
-    const { image, result } = location.state || {};
+    const { images, result } = location.state || {};
     const [selectedLNF, setSelectedLNF] = useState(null); //popup state
     const [viewMode, setViewMode] = useState('lnf'); //show lnfs or all transitions
+    const [currentImageIndex, setCurrentImageIndex] = useState(0); //track which image is shown
 
     //get all transitions
     const allTransitions = useMemo(() => {
@@ -46,6 +47,17 @@ function LNF_Result(){
         URL.revokeObjectURL(url);
     }
 
+    //go to previous image
+    const handlePrev = () =>{
+      setCurrentImageIndex(prev => (prev === 0 ? images.length-1 : prev -1));
+    };
+
+    //go to next image
+    const handleNext = () =>{
+      setCurrentImageIndex(prev => (prev === images.length -1 ? 0 : prev + 1));
+    };
+
+
     const redirect = ()=>{
         navigate('/home')
     }
@@ -69,19 +81,69 @@ function LNF_Result(){
           </button>
         </div>
 
-        <div className="flex justify-center">
-          {image ? (
-            <img
-              src={image}
-              alt="Uploaded"
-              className="max-h-[70vh] w-auto max-w-[70vw] rounded-xl object-contain"
-            />
+            {/* Image Slideshow */}
+        <div className="flex flex-col items-center gap-3">
+          {images && images.length > 0 ? (
+            <>
+              <div className="relative flex items-center justify-center w-full">
+
+                {/* Left arrow */}
+                {images.length > 1 && (
+                  <button
+                    onClick={handlePrev}
+                    className="absolute left-0 z-10 rounded-full bg-white p-2 shadow-md hover:bg-slate-100 transition"
+                  >
+                    &#8592;
+                  </button>
+                )}
+
+                {/* Current image */}
+                <img
+                  src={images[currentImageIndex]}
+                  alt={`Uploaded ${currentImageIndex + 1}`}
+                  className="max-h-[70vh] w-auto max-w-[70vw] rounded-xl object-contain"
+                />
+
+                {/* Right arrow */}
+                {images.length > 1 && (
+                  <button
+                    onClick={handleNext}
+                    className="absolute right-0 z-10 rounded-full bg-white p-2 shadow-md hover:bg-slate-100 transition"
+                  >
+                    &#8594;
+                  </button>
+                )}
+              </div>
+
+              {/* Image counter e.g. 1 / 3 */}
+              {images.length > 1 && (
+                <div className="text-sm text-slate-500">
+                  {currentImageIndex + 1} / {images.length}
+                </div>
+              )}
+
+              {/* Dot indicators */}
+              {images.length > 1 && (
+                <div className="flex gap-2">
+                  {images.map((_, i) => (
+                    <button
+                      key={i}
+                      onClick={() => setCurrentImageIndex(i)}
+                      className={`size-2 rounded-full transition ${
+                        i === currentImageIndex ? 'bg-indigo-600' : 'bg-slate-300'
+                      }`}
+                    />
+                  ))}
+                </div>
+              )}
+            </>
           ) : (
             <div className="flex h-64 w-full max-w-2xl items-center justify-center text-slate-500">
               No image found
             </div>
           )}
         </div>
+
 
         <div className="rounded-3xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
           <div className="mb-4 flex flex-wrap items-center justify-between gap-3">

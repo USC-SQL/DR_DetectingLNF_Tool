@@ -2,234 +2,832 @@
   "navigation_path": [
     {
       "step": 1,
-      "element": "Email Address or Username input",
-      "description": "First text field in the sign-in form, located on the left of the first input row."
+      "element": "Mozilla logo/home link",
+      "description": "Top-left site logo in the global header."
     },
     {
       "step": 2,
-      "element": "Password input",
-      "description": "Second text field in the sign-in form, located to the right of the email/username field."
+      "element": "Download Firefox button",
+      "description": "Primary call-to-action button in the top-right header."
     },
     {
       "step": 3,
-      "element": "Sign In button",
-      "description": "Primary action button on the right side below the password field."
+      "element": "Firefox Browsers",
+      "description": "Global navigation link in the header."
     },
     {
       "step": 4,
-      "element": "Cancel button",
-      "description": "Secondary action button to the left of the Sign In button on the same row."
+      "element": "Products",
+      "description": "Global navigation link in the header."
     },
     {
       "step": 5,
-      "element": "Remember Me checkbox",
-      "description": "Checkbox below the input fields on the left side of the form."
+      "element": "Who We Are",
+      "description": "Global navigation link in the header."
     },
     {
       "step": 6,
-      "element": "Create Account link",
-      "description": "Link below the divider and under the 'Don't have a Disney account?' text."
+      "element": "Innovation",
+      "description": "Global navigation link in the header."
     },
     {
       "step": 7,
-      "element": "Walt Disney World logo link",
-      "description": "Logo link centered above the sign-in panel near the top of the page."
+      "element": "More information link for EU/EEA/Switzerland/California users",
+      "description": "Inline link in the main article text under 'What do we do with your information once we have it?'."
     },
     {
       "step": 8,
-      "element": "Forgot password? link",
-      "description": "Link aligned to the right of the password label, above the password field."
+      "element": "Mission of being open",
+      "description": "Inline link in the main article text under 'When do we share your information with others?'."
     },
     {
       "step": 9,
-      "element": "Information icon/help control for Email Address or Username",
-      "description": "Small icon adjacent to the email/username label, visually associated with that field."
+      "element": "compliance@mozilla.com",
+      "description": "Email link in the 'Contact Mozilla' section."
     },
     {
       "step": 10,
-      "element": "Help & Guest Services link",
-      "description": "First footer link at the bottom left area of the page."
+      "element": "Data Subject Access Requests",
+      "description": "Inline link in the 'Contact Mozilla' section."
     },
     {
       "step": 11,
-      "element": "Site Map link",
-      "description": "Second footer link to the right of Help & Guest Services."
+      "element": "Visit our forums",
+      "description": "Inline support/forums link in the 'Contact Mozilla' section."
     },
     {
       "step": 12,
-      "element": "Terms of Use link",
-      "description": "Third footer link in the bottom row."
+      "element": "Mozilla Privacy",
+      "description": "Left sidebar in-page/section navigation link; current section appears highlighted."
     },
     {
       "step": 13,
-      "element": "Legal Notices link",
-      "description": "Fourth footer link in the bottom row."
+      "element": "Mozilla Websites, Communications & Cookies",
+      "description": "Left sidebar navigation link."
     },
     {
       "step": 14,
-      "element": "Privacy Policy link",
-      "description": "Fifth footer link in the bottom row."
+      "element": "Firefox Browser",
+      "description": "Left sidebar navigation link."
     },
     {
       "step": 15,
-      "element": "Do Not Sell My Info link",
-      "description": "Sixth footer link in the bottom row."
+      "element": "Firefox Better Web",
+      "description": "Left sidebar navigation link."
     },
     {
       "step": 16,
-      "element": "Children's Online Privacy Policy link",
-      "description": "Seventh footer link in the bottom row."
+      "element": "Firefox for Fire TV",
+      "description": "Left sidebar navigation link."
     },
     {
       "step": 17,
-      "element": "Your California Privacy Rights link",
-      "description": "Eighth footer link at the far right of the footer."
+      "element": "Firefox Reality",
+      "description": "Left sidebar navigation link."
+    },
+    {
+      "step": 18,
+      "element": "Firefox OS",
+      "description": "Left sidebar navigation link."
+    },
+    {
+      "step": 19,
+      "element": "Firefox Focus",
+      "description": "Left sidebar navigation link."
+    },
+    {
+      "step": 20,
+      "element": "Firefox Private Network",
+      "description": "Left sidebar navigation link."
+    },
+    {
+      "step": 21,
+      "element": "Firefox Relay",
+      "description": "Left sidebar navigation link."
+    },
+    {
+      "step": 22,
+      "element": "Mozilla VPN",
+      "description": "Left sidebar navigation link."
+    },
+    {
+      "step": 23,
+      "element": "Thunderbird",
+      "description": "Left sidebar navigation link."
+    },
+    {
+      "step": 24,
+      "element": "MDN Plus",
+      "description": "Left sidebar navigation link."
+    },
+    {
+      "step": 25,
+      "element": "Mozilla Privacy Principles",
+      "description": "Link in the left-column 'Data Privacy Principles' card."
+    },
+    {
+      "step": 26,
+      "element": "This page/product reference link",
+      "description": "Second inline link in the left-column 'Data Privacy Principles' card."
+    },
+    {
+      "step": 27,
+      "element": "Transparency Report",
+      "description": "Link in the left-column 'Transparency Report' card."
+    },
+    {
+      "step": 28,
+      "element": "Subscribe to Mozilla’s governance group",
+      "description": "Link in the left-column 'Get Involved' card."
+    },
+    {
+      "step": 29,
+      "element": "Mozilla’s Open Policy and Advocacy Blog",
+      "description": "Second link in the left-column 'Get Involved' card."
+    },
+    {
+      "step": 30,
+      "element": "Outdated Policies",
+      "description": "Standalone link in the left column below the cards."
+    },
+    {
+      "step": 31,
+      "element": "Mozilla Manifesto",
+      "description": "Footer link in the Company column."
+    },
+    {
+      "step": 32,
+      "element": "Press Center",
+      "description": "Footer link in the Company column."
+    },
+    {
+      "step": 33,
+      "element": "Corporate Blog",
+      "description": "Footer link in the Company column."
+    },
+    {
+      "step": 34,
+      "element": "Careers",
+      "description": "Footer link in the Company column."
+    },
+    {
+      "step": 35,
+      "element": "Contact",
+      "description": "Footer link in the Company column."
+    },
+    {
+      "step": 36,
+      "element": "Donate",
+      "description": "Footer link in the Company column."
+    },
+    {
+      "step": 37,
+      "element": "Privacy Hub",
+      "description": "Footer link in the Resources column."
+    },
+    {
+      "step": 38,
+      "element": "Browser Comparison",
+      "description": "Footer link in the Resources column."
+    },
+    {
+      "step": 39,
+      "element": "Brand Standards",
+      "description": "Footer link in the Resources column."
+    },
+    {
+      "step": 40,
+      "element": "Product Help",
+      "description": "Footer link in the Support column."
+    },
+    {
+      "step": 41,
+      "element": "File a Bug",
+      "description": "Footer link in the Support column."
+    },
+    {
+      "step": 42,
+      "element": "Developer Edition",
+      "description": "Footer link in the Developers column."
+    },
+    {
+      "step": 43,
+      "element": "Beta",
+      "description": "Footer link in the Developers column."
+    },
+    {
+      "step": 44,
+      "element": "Beta for Android",
+      "description": "Footer link in the Developers column."
+    },
+    {
+      "step": 45,
+      "element": "Nightly",
+      "description": "Footer link in the Developers column."
+    },
+    {
+      "step": 46,
+      "element": "Nightly for Android",
+      "description": "Footer link in the Developers column."
+    },
+    {
+      "step": 47,
+      "element": "Enterprise",
+      "description": "Footer link in the Developers column."
+    },
+    {
+      "step": 48,
+      "element": "Tools",
+      "description": "Footer link in the Developers column."
+    },
+    {
+      "step": 49,
+      "element": "Follow @Mozilla social link 1",
+      "description": "First social media icon/link in the 'Follow @Mozilla' footer area."
+    },
+    {
+      "step": 50,
+      "element": "Follow @Mozilla social link 2",
+      "description": "Second social media icon/link in the 'Follow @Mozilla' footer area."
+    },
+    {
+      "step": 51,
+      "element": "Follow @Firefox social link 1",
+      "description": "First social media icon/link in the 'Follow @Firefox' footer area."
+    },
+    {
+      "step": 52,
+      "element": "Follow @Firefox social link 2",
+      "description": "Second social media icon/link in the 'Follow @Firefox' footer area."
+    },
+    {
+      "step": 53,
+      "element": "Follow @Firefox social link 3",
+      "description": "Third social media icon/link in the 'Follow @Firefox' footer area."
+    },
+    {
+      "step": 54,
+      "element": "Language",
+      "description": "Footer language-related link/label positioned above the language selector."
+    },
+    {
+      "step": 55,
+      "element": "Language selector",
+      "description": "Footer language dropdown currently showing English."
+    },
+    {
+      "step": 56,
+      "element": "Mozilla logo/footer home link",
+      "description": "Footer logo link on the lower left."
+    },
+    {
+      "step": 57,
+      "element": "Website Privacy Notice",
+      "description": "Footer legal/policy link."
+    },
+    {
+      "step": 58,
+      "element": "Cookies",
+      "description": "Footer legal/policy link."
+    },
+    {
+      "step": 59,
+      "element": "Legal",
+      "description": "Footer legal/policy link."
+    },
+    {
+      "step": 60,
+      "element": "Community Participation Guidelines",
+      "description": "Footer legal/policy link."
+    },
+    {
+      "step": 61,
+      "element": "Mozilla Corporation",
+      "description": "Link in the footer copyright/foundation sentence."
+    },
+    {
+      "step": 62,
+      "element": "Mozilla Foundation",
+      "description": "Link in the footer copyright/foundation sentence."
+    },
+    {
+      "step": 63,
+      "element": "Creative Commons license",
+      "description": "Footer license link."
     }
   ],
   "lnf_analysis": [
     {
       "transition": "browser -> 1",
       "is_lnf": false,
-      "issue": "",
-      "why_it_fails": "",
-      "impact": "",
-      "one_sentence_reason": "Starting focus in the first form field is acceptable because it places the keyboard user at the primary interactive content of the page."
+      "issue": "Focus enters on the header logo/home link.",
+      "why_it_fails": "This entry point is reasonable because it starts at the beginning of the page's global header and matches a common top-left starting point.",
+      "impact": "Keyboard users begin at a predictable location.",
+      "one_sentence_reason": "Starting on the logo/home link is a logical first focus target."
     },
     {
       "transition": "1 -> 2",
-      "is_lnf": false,
-      "issue": "",
-      "why_it_fails": "",
-      "impact": "",
-      "one_sentence_reason": "Moving from the left email/username field to the right password field follows the expected left-to-right order within the same row."
+      "is_lnf": true,
+      "issue": "Focus jumps from the leftmost logo to the far-right 'Download Firefox' button before visiting the header navigation links located visually between them.",
+      "why_it_fails": "Using a top-to-bottom, left-to-right reading model, users would expect the next focus after the logo to move to the adjacent navigation links, not skip across the entire header to a later control.",
+      "impact": "This creates a disorienting header sequence and can make users think items 3-6 were skipped or located elsewhere.",
+      "one_sentence_reason": "The jump from the left logo to the far-right button breaks the expected left-to-right order of the header."
     },
     {
       "transition": "2 -> 3",
       "is_lnf": true,
-      "issue": "Focus moves from the password field to the Sign In button before other controls that are earlier in visual reading order, including the Remember Me checkbox on the left and the Cancel button to the left of Sign In.",
-      "why_it_fails": "Under a top-to-bottom, left-to-right reading model, after the password field the next relevant controls on the next row would be Remember Me on the left and then Cancel before Sign In. Jumping directly to the rightmost primary button disrupts the linear sequence and does not preserve the visual/meaningful order of the form controls.",
-      "impact": "Keyboard users encounter actions before supporting options and before the left-side checkbox, making the form feel disjointed and increasing the chance they miss available choices.",
-      "one_sentence_reason": "This jump skips earlier-positioned controls and breaks the expected left-to-right, top-to-bottom reading order."
+      "issue": "After reaching the far-right header button, focus returns back leftward to the first navigation link.",
+      "why_it_fails": "This reverses the visual scan direction within the same row and produces a zig-zag pattern instead of a meaningful linear order.",
+      "impact": "Keyboard users must mentally reorient to a previous visual area, reducing predictability and increasing navigation effort.",
+      "one_sentence_reason": "Moving from the rightmost header button back to links on its left is not a logical sequential focus order."
     },
     {
       "transition": "3 -> 4",
-      "is_lnf": true,
-      "issue": "Focus reverses direction within the same row by moving from the rightmost Sign In button back to the left-side Cancel button.",
-      "why_it_fails": "Within a single horizontal row, logical reading order is left to right; Cancel appears before Sign In visually, so encountering Sign In first and then moving backward to Cancel is not intuitive.",
-      "impact": "Keyboard users may misinterpret the structure of the action row and can activate the primary action before discovering the secondary action.",
-      "one_sentence_reason": "The focus order moves right-to-left across the action buttons, which is opposite the expected reading sequence."
+      "is_lnf": false,
+      "issue": "Focus moves from 'Firefox Browsers' to 'Products'.",
+      "why_it_fails": "This follows the visible left-to-right order of adjacent navigation items.",
+      "impact": "Keyboard users can continue through the header nav predictably.",
+      "one_sentence_reason": "This is a logical left-to-right header navigation step."
     },
     {
       "transition": "4 -> 5",
-      "is_lnf": true,
-      "issue": "After reaching the Cancel button on the right, focus jumps leftward and slightly upward to the Remember Me checkbox.",
-      "why_it_fails": "Remember Me is visually earlier in the row and should have been reached before the action buttons; placing it after both buttons creates a non-linear sequence that does not match how a sighted user would consume the form.",
-      "impact": "Users may overlook the checkbox until after passing the submit/cancel actions, reducing form comprehension and efficiency.",
-      "one_sentence_reason": "The checkbox is visually positioned before the buttons but is reached only after them, creating an illogical backward jump."
+      "is_lnf": false,
+      "issue": "Focus moves from 'Products' to 'Who We Are'.",
+      "why_it_fails": "This matches the visual order of the navigation menu.",
+      "impact": "No meaningful disruption occurs.",
+      "one_sentence_reason": "The transition follows expected adjacent navigation order."
     },
     {
       "transition": "5 -> 6",
       "is_lnf": false,
-      "issue": "",
-      "why_it_fails": "",
-      "impact": "",
-      "one_sentence_reason": "Moving from the Remember Me checkbox down to the Create Account link follows the general top-to-bottom flow of the page."
+      "issue": "Focus moves from 'Who We Are' to 'Innovation'.",
+      "why_it_fails": "This remains consistent with the left-to-right order of the remaining top navigation links.",
+      "impact": "Navigation remains understandable.",
+      "one_sentence_reason": "This transition is visually and semantically consistent."
     },
     {
       "transition": "6 -> 7",
-      "is_lnf": true,
-      "issue": "Focus jumps from the lower Create Account link back up to the top-page Walt Disney World logo link.",
-      "why_it_fails": "The logo is visually above the form and should be encountered before the form controls if it is in the tab order; reaching it only after a lower form section breaks spatial and meaningful order.",
-      "impact": "Keyboard users are forced to revisit upper-page content after progressing downward, which is disorienting and interrupts task flow.",
-      "one_sentence_reason": "This is a major upward jump to content that is visually much earlier on the page."
+      "is_lnf": false,
+      "issue": "Focus moves from the header into the main article content.",
+      "why_it_fails": "Although intermediate non-focusable headings and text appear visually first, the next focusable element being an inline link within the main content is still a meaningful progression into the page body.",
+      "impact": "Keyboard users arrive at the first interactive element within the primary content area.",
+      "one_sentence_reason": "Moving from global navigation to the first focusable link in the main content is acceptable."
     },
     {
       "transition": "7 -> 8",
-      "is_lnf": true,
-      "issue": "Focus moves from the top logo down into the Forgot password? link, but bypasses the main form sequence and lands on a label-adjacent utility link late in the order.",
-      "why_it_fails": "Forgot password? is visually associated with the password label area near the top of the form and should be encountered around the password field, not after lower-page content and the top logo.",
-      "impact": "This makes the page feel unpredictably ordered and may cause users to miss contextual assistance when it would be most useful.",
-      "one_sentence_reason": "The link is contextually tied to the password area but is reached far later than its visual position suggests."
+      "is_lnf": false,
+      "issue": "Focus moves between two inline links in the main article.",
+      "why_it_fails": "These links appear in reading order as the user moves downward through the article.",
+      "impact": "The article's interactive content is navigated in a sensible sequence.",
+      "one_sentence_reason": "This follows the main content's reading flow."
     },
     {
       "transition": "8 -> 9",
-      "is_lnf": true,
-      "issue": "Focus moves from the Forgot password? link on the right to the information icon near the email label on the left, effectively jumping upward and leftward within an earlier part of the form.",
-      "why_it_fails": "The info icon is visually located near the first field label and should appear before or around the email field in a logical reading sequence, not after lower controls, the logo, and the forgot-password link.",
-      "impact": "Users encounter supplementary help for the first field only after most of the page has already been traversed, which undermines comprehension and predictability.",
-      "one_sentence_reason": "This transition returns to an earlier, upper-left contextual control that should have appeared near the start of the form."
+      "is_lnf": false,
+      "issue": "Focus moves from article content to the contact section's first link.",
+      "why_it_fails": "This follows the page's downward reading order into the next section.",
+      "impact": "Users progress naturally through the article toward contact information.",
+      "one_sentence_reason": "This is a logical continuation into the next section."
     },
     {
       "transition": "9 -> 10",
       "is_lnf": false,
-      "issue": "",
-      "why_it_fails": "",
-      "impact": "",
-      "one_sentence_reason": "After the final upper-page control, moving down to the first footer link is a reasonable continuation toward the bottom of the page."
+      "issue": "Focus moves within the 'Contact Mozilla' section from the email link to the data request link.",
+      "why_it_fails": "This aligns with the paragraph order in the section.",
+      "impact": "No confusion is introduced.",
+      "one_sentence_reason": "The transition follows local reading order within the section."
     },
     {
       "transition": "10 -> 11",
       "is_lnf": false,
-      "issue": "",
-      "why_it_fails": "",
-      "impact": "",
-      "one_sentence_reason": "The footer links proceed left to right in a standard horizontal sequence."
+      "issue": "Focus moves to the forums link later in the contact section.",
+      "why_it_fails": "This continues the top-to-bottom reading order within the section.",
+      "impact": "The user can consume the contact content sequentially.",
+      "one_sentence_reason": "This is a normal progression through the contact links."
     },
     {
       "transition": "11 -> 12",
-      "is_lnf": false,
-      "issue": "",
-      "why_it_fails": "",
-      "impact": "",
-      "one_sentence_reason": "This follows the visible left-to-right order of adjacent footer links."
+      "is_lnf": true,
+      "issue": "After the end of the main article/contact content, focus jumps back upward to the left sidebar navigation near the top of the page.",
+      "why_it_fails": "A sighted user reading top-to-bottom would expect focus to continue downward into the footer or nearby lower-page controls, not return to a much earlier side navigation area that was visually present far above.",
+      "impact": "This creates a substantial spatial and contextual jump, making the page feel out of sequence and increasing cognitive load.",
+      "one_sentence_reason": "Focus returns to an earlier sidebar region instead of continuing downward from the end of the main content."
     },
     {
       "transition": "12 -> 13",
       "is_lnf": false,
-      "issue": "",
-      "why_it_fails": "",
-      "impact": "",
-      "one_sentence_reason": "The focus order remains consistent with the displayed footer link sequence."
+      "issue": "Focus moves down the left sidebar list.",
+      "why_it_fails": "The links are traversed in visible top-to-bottom order.",
+      "impact": "Sidebar navigation itself is internally coherent.",
+      "one_sentence_reason": "This is a logical sidebar list sequence."
     },
     {
       "transition": "13 -> 14",
       "is_lnf": false,
-      "issue": "",
-      "why_it_fails": "",
-      "impact": "",
-      "one_sentence_reason": "This is a normal left-to-right progression through the footer navigation."
+      "issue": "Focus moves to the next sidebar link.",
+      "why_it_fails": "This matches the visual order of the list.",
+      "impact": "No issue.",
+      "one_sentence_reason": "The list order is preserved."
     },
     {
       "transition": "14 -> 15",
       "is_lnf": false,
-      "issue": "",
-      "why_it_fails": "",
-      "impact": "",
-      "one_sentence_reason": "The transition preserves the visible order of footer items."
+      "issue": "Focus continues through the sidebar list.",
+      "why_it_fails": "The order is top-to-bottom and predictable.",
+      "impact": "No disruption.",
+      "one_sentence_reason": "This follows the displayed order."
     },
     {
       "transition": "15 -> 16",
       "is_lnf": false,
-      "issue": "",
-      "why_it_fails": "",
-      "impact": "",
-      "one_sentence_reason": "Focus continues logically across the footer links from left to right."
+      "issue": "Focus continues through the sidebar list.",
+      "why_it_fails": "The order remains visually sequential.",
+      "impact": "No disruption.",
+      "one_sentence_reason": "This is consistent list navigation."
     },
     {
       "transition": "16 -> 17",
       "is_lnf": false,
-      "issue": "",
-      "why_it_fails": "",
-      "impact": "",
-      "one_sentence_reason": "This is the expected final left-to-right step within the footer row."
+      "issue": "Focus continues through the sidebar list.",
+      "why_it_fails": "The transition follows visible order.",
+      "impact": "No issue.",
+      "one_sentence_reason": "This remains a predictable sequence."
     },
     {
-      "transition": "17 -> browser",
+      "transition": "17 -> 18",
       "is_lnf": false,
-      "issue": "",
-      "why_it_fails": "",
-      "impact": "",
-      "one_sentence_reason": "Exiting to browser chrome after the last page focusable element is expected and does not indicate a page-level focus-order problem."
+      "issue": "Focus continues through the sidebar list.",
+      "why_it_fails": "The order is sequential.",
+      "impact": "No issue.",
+      "one_sentence_reason": "This transition is logical."
+    },
+    {
+      "transition": "18 -> 19",
+      "is_lnf": false,
+      "issue": "Focus continues through the sidebar list.",
+      "why_it_fails": "The order mirrors the visible presentation.",
+      "impact": "No issue.",
+      "one_sentence_reason": "The sidebar remains internally consistent."
+    },
+    {
+      "transition": "19 -> 20",
+      "is_lnf": false,
+      "issue": "Focus continues through the sidebar list.",
+      "why_it_fails": "This is visually sequential.",
+      "impact": "No issue.",
+      "one_sentence_reason": "The transition follows top-to-bottom order."
+    },
+    {
+      "transition": "20 -> 21",
+      "is_lnf": false,
+      "issue": "Focus continues through the sidebar list.",
+      "why_it_fails": "The order remains predictable.",
+      "impact": "No issue.",
+      "one_sentence_reason": "This list transition is logical."
+    },
+    {
+      "transition": "21 -> 22",
+      "is_lnf": false,
+      "issue": "Focus continues through the sidebar list.",
+      "why_it_fails": "The order matches the visible list sequence.",
+      "impact": "No issue.",
+      "one_sentence_reason": "This is a normal adjacent-item transition."
+    },
+    {
+      "transition": "22 -> 23",
+      "is_lnf": false,
+      "issue": "Focus continues through the sidebar list.",
+      "why_it_fails": "The order is top-to-bottom.",
+      "impact": "No issue.",
+      "one_sentence_reason": "This continues the visible list order."
+    },
+    {
+      "transition": "23 -> 24",
+      "is_lnf": false,
+      "issue": "Focus moves to the last visible link in the sidebar list.",
+      "why_it_fails": "This aligns with the sidebar's visual order.",
+      "impact": "No issue.",
+      "one_sentence_reason": "The sidebar list remains coherent."
+    },
+    {
+      "transition": "24 -> 25",
+      "is_lnf": false,
+      "issue": "Focus moves from the end of the sidebar list to the next focusable card link lower in the left column.",
+      "why_it_fails": "This follows the left column's downward progression.",
+      "impact": "Keyboard users can continue through the left column naturally.",
+      "one_sentence_reason": "This transition stays within the same column and moves downward."
+    },
+    {
+      "transition": "25 -> 26",
+      "is_lnf": false,
+      "issue": "Focus moves to the second link in the same 'Data Privacy Principles' card.",
+      "why_it_fails": "This is consistent with reading order inside the card.",
+      "impact": "No issue.",
+      "one_sentence_reason": "The card's internal link order is logical."
+    },
+    {
+      "transition": "26 -> 27",
+      "is_lnf": false,
+      "issue": "Focus moves to the next card below, 'Transparency Report'.",
+      "why_it_fails": "This reflects the top-to-bottom order in the left column.",
+      "impact": "No issue.",
+      "one_sentence_reason": "This is a sensible move to the next item below."
+    },
+    {
+      "transition": "27 -> 28",
+      "is_lnf": false,
+      "issue": "Focus moves into the 'Get Involved' card below.",
+      "why_it_fails": "This matches the left column reading order.",
+      "impact": "No issue.",
+      "one_sentence_reason": "The sequence continues downward as expected."
+    },
+    {
+      "transition": "28 -> 29",
+      "is_lnf": false,
+      "issue": "Focus moves to the second link in the 'Get Involved' card.",
+      "why_it_fails": "This follows the local text/link order inside the card.",
+      "impact": "No issue.",
+      "one_sentence_reason": "This transition is internally consistent."
+    },
+    {
+      "transition": "29 -> 30",
+      "is_lnf": false,
+      "issue": "Focus moves to the standalone 'Outdated Policies' link below.",
+      "why_it_fails": "This continues down the same left column.",
+      "impact": "No issue.",
+      "one_sentence_reason": "The left-column sequence remains logical."
+    },
+    {
+      "transition": "30 -> 31",
+      "is_lnf": false,
+      "issue": "Focus moves from the left-column content area to the footer, beginning with the first link in the Company column.",
+      "why_it_fails": "This is a reasonable continuation downward into the footer's first column.",
+      "impact": "Users proceed from page body to footer in a predictable way.",
+      "one_sentence_reason": "Entering the footer at its first column is acceptable."
+    },
+    {
+      "transition": "31 -> 32",
+      "is_lnf": false,
+      "issue": "Focus moves down the Company footer column.",
+      "why_it_fails": "This follows the visible top-to-bottom order.",
+      "impact": "No issue.",
+      "one_sentence_reason": "This is a normal vertical list sequence."
+    },
+    {
+      "transition": "32 -> 33",
+      "is_lnf": false,
+      "issue": "Focus continues down the Company footer column.",
+      "why_it_fails": "The order matches the displayed list.",
+      "impact": "No issue.",
+      "one_sentence_reason": "The footer column is navigated logically."
+    },
+    {
+      "transition": "33 -> 34",
+      "is_lnf": false,
+      "issue": "Focus continues down the Company footer column.",
+      "why_it_fails": "This preserves visible order.",
+      "impact": "No issue.",
+      "one_sentence_reason": "This remains consistent with the layout."
+    },
+    {
+      "transition": "34 -> 35",
+      "is_lnf": false,
+      "issue": "Focus continues down the Company footer column.",
+      "why_it_fails": "This is top-to-bottom within the column.",
+      "impact": "No issue.",
+      "one_sentence_reason": "This is a logical adjacent transition."
+    },
+    {
+      "transition": "35 -> 36",
+      "is_lnf": false,
+      "issue": "Focus reaches the final link in the Company footer column.",
+      "why_it_fails": "The sequence remains internally coherent.",
+      "impact": "No issue.",
+      "one_sentence_reason": "This properly completes the Company column."
+    },
+    {
+      "transition": "36 -> 37",
+      "is_lnf": false,
+      "issue": "Focus moves from the bottom of the Company column to the top of the Resources column.",
+      "why_it_fails": "Under a row/column reading model for grouped footer columns, finishing one column then moving to the next column's top is still a meaningful order.",
+      "impact": "Keyboard users can continue through footer groups systematically.",
+      "one_sentence_reason": "Moving from one completed footer column to the next is acceptable."
+    },
+    {
+      "transition": "37 -> 38",
+      "is_lnf": false,
+      "issue": "Focus moves down the Resources column.",
+      "why_it_fails": "This follows top-to-bottom order.",
+      "impact": "No issue.",
+      "one_sentence_reason": "This is a logical list progression."
+    },
+    {
+      "transition": "38 -> 39",
+      "is_lnf": false,
+      "issue": "Focus moves to the next Resources link.",
+      "why_it_fails": "This matches visible order.",
+      "impact": "No issue.",
+      "one_sentence_reason": "This transition is consistent."
+    },
+    {
+      "transition": "39 -> 40",
+      "is_lnf": false,
+      "issue": "Focus moves from the Resources column to the Support column.",
+      "why_it_fails": "This is a reasonable progression across footer columns after completing the previous group.",
+      "impact": "No issue.",
+      "one_sentence_reason": "This is an acceptable grouped-footer transition."
+    },
+    {
+      "transition": "40 -> 41",
+      "is_lnf": false,
+      "issue": "Focus moves down the Support column.",
+      "why_it_fails": "This follows visible top-to-bottom order.",
+      "impact": "No issue.",
+      "one_sentence_reason": "This is a logical within-column step."
+    },
+    {
+      "transition": "41 -> 42",
+      "is_lnf": false,
+      "issue": "Focus moves from the Support column to the Developers column.",
+      "why_it_fails": "This follows the footer's grouped layout from left to right after finishing the previous column.",
+      "impact": "No issue.",
+      "one_sentence_reason": "This is a reasonable next-column transition."
+    },
+    {
+      "transition": "42 -> 43",
+      "is_lnf": false,
+      "issue": "Focus moves down the Developers column.",
+      "why_it_fails": "The order is sequential within the column.",
+      "impact": "No issue.",
+      "one_sentence_reason": "This follows the displayed list order."
+    },
+    {
+      "transition": "43 -> 44",
+      "is_lnf": false,
+      "issue": "Focus continues down the Developers column.",
+      "why_it_fails": "This remains top-to-bottom.",
+      "impact": "No issue.",
+      "one_sentence_reason": "This is a consistent list transition."
+    },
+    {
+      "transition": "44 -> 45",
+      "is_lnf": false,
+      "issue": "Focus continues down the Developers column.",
+      "why_it_fails": "This matches the visual order.",
+      "impact": "No issue.",
+      "one_sentence_reason": "The sequence remains logical."
+    },
+    {
+      "transition": "45 -> 46",
+      "is_lnf": false,
+      "issue": "Focus continues down the Developers column.",
+      "why_it_fails": "The progression is visually sequential.",
+      "impact": "No issue.",
+      "one_sentence_reason": "This is expected within-column navigation."
+    },
+    {
+      "transition": "46 -> 47",
+      "is_lnf": false,
+      "issue": "Focus continues down the Developers column.",
+      "why_it_fails": "This aligns with the visible list order.",
+      "impact": "No issue.",
+      "one_sentence_reason": "The transition is logical."
+    },
+    {
+      "transition": "47 -> 48",
+      "is_lnf": false,
+      "issue": "Focus moves to the last visible link in the Developers column.",
+      "why_it_fails": "This completes the column in top-to-bottom order.",
+      "impact": "No issue.",
+      "one_sentence_reason": "This properly completes the Developers column."
+    },
+    {
+      "transition": "48 -> 49",
+      "is_lnf": false,
+      "issue": "Focus moves from the Developers column to the social links area on the right.",
+      "why_it_fails": "This continues across the footer from left toward right, consistent with the overall layout.",
+      "impact": "No issue.",
+      "one_sentence_reason": "This is a reasonable continuation to the next footer group."
+    },
+    {
+      "transition": "49 -> 50",
+      "is_lnf": false,
+      "issue": "Focus moves between the two @Mozilla social icons.",
+      "why_it_fails": "These adjacent controls are traversed together in local order.",
+      "impact": "No issue.",
+      "one_sentence_reason": "This is a logical within-group transition."
+    },
+    {
+      "transition": "50 -> 51",
+      "is_lnf": false,
+      "issue": "Focus moves to the first @Firefox social icon below.",
+      "why_it_fails": "This follows the social groups from top to bottom.",
+      "impact": "No issue.",
+      "one_sentence_reason": "The social section is navigated sensibly."
+    },
+    {
+      "transition": "51 -> 52",
+      "is_lnf": false,
+      "issue": "Focus moves to the next @Firefox social icon.",
+      "why_it_fails": "This is an adjacent control in the same group.",
+      "impact": "No issue.",
+      "one_sentence_reason": "This group order is logical."
+    },
+    {
+      "transition": "52 -> 53",
+      "is_lnf": false,
+      "issue": "Focus moves to the third @Firefox social icon.",
+      "why_it_fails": "This completes the visible group in order.",
+      "impact": "No issue.",
+      "one_sentence_reason": "This is a consistent local sequence."
+    },
+    {
+      "transition": "53 -> 54",
+      "is_lnf": false,
+      "issue": "Focus moves to the language-related control area lower in the footer.",
+      "why_it_fails": "This continues downward within the right footer area.",
+      "impact": "No issue.",
+      "one_sentence_reason": "This is a reasonable move to the next control group."
+    },
+    {
+      "transition": "54 -> 55",
+      "is_lnf": false,
+      "issue": "Focus moves from the language label/link to the language selector.",
+      "why_it_fails": "These are directly associated controls in the same area.",
+      "impact": "No issue.",
+      "one_sentence_reason": "This is a logical pairing of related controls."
+    },
+    {
+      "transition": "55 -> 56",
+      "is_lnf": true,
+      "issue": "After the lower-right language selector, focus jumps leftward to the footer logo before other lower-row footer links are completed in left-to-right order.",
+      "why_it_fails": "In the lower footer row, a reading model would typically move from the leftmost logo toward the adjacent legal links, or if starting at the right language area, would not then jump back to the far-left beginning of the row without an evident reason.",
+      "impact": "This creates another spatially disorienting reversal in the footer and makes the lower footer row harder to understand as a linear sequence.",
+      "one_sentence_reason": "The jump from the lower-right language selector to the far-left footer logo disrupts expected row order."
+    },
+    {
+      "transition": "56 -> 57",
+      "is_lnf": false,
+      "issue": "Focus moves from the footer logo to the first legal link.",
+      "why_it_fails": "Once at the left start of the lower footer row, the sequence proceeds left to right.",
+      "impact": "No issue within this local row.",
+      "one_sentence_reason": "This follows the lower footer row's visible order."
+    },
+    {
+      "transition": "57 -> 58",
+      "is_lnf": false,
+      "issue": "Focus moves to the next legal link.",
+      "why_it_fails": "This is adjacent left-to-right order.",
+      "impact": "No issue.",
+      "one_sentence_reason": "This is a logical footer link transition."
+    },
+    {
+      "transition": "58 -> 59",
+      "is_lnf": false,
+      "issue": "Focus moves to the next legal link.",
+      "why_it_fails": "This remains consistent with visible order.",
+      "impact": "No issue.",
+      "one_sentence_reason": "This transition is predictable."
+    },
+    {
+      "transition": "59 -> 60",
+      "is_lnf": false,
+      "issue": "Focus moves to the next legal/community link.",
+      "why_it_fails": "This follows the row sequence.",
+      "impact": "No issue.",
+      "one_sentence_reason": "This is a normal adjacent step."
+    },
+    {
+      "transition": "60 -> 61",
+      "is_lnf": false,
+      "issue": "Focus moves to the first link in the copyright/foundation sentence below.",
+      "why_it_fails": "This continues downward to the next line of footer content.",
+      "impact": "No issue.",
+      "one_sentence_reason": "This is a reasonable move into the final footer text links."
+    },
+    {
+      "transition": "61 -> 62",
+      "is_lnf": false,
+      "issue": "Focus moves to the second link in the same footer sentence.",
+      "why_it_fails": "This matches reading order in the sentence.",
+      "impact": "No issue.",
+      "one_sentence_reason": "This follows the sentence's inline link order."
+    },
+    {
+      "transition": "62 -> 63",
+      "is_lnf": false,
+      "issue": "Focus moves to the Creative Commons license link.",
+      "why_it_fails": "This is the next focusable item in the footer text block.",
+      "impact": "No issue.",
+      "one_sentence_reason": "This is a logical final link in the footer content."
+    },
+    {
+      "transition": "63 -> browser",
+      "is_lnf": false,
+      "issue": "Focus exits the page after the last footer link.",
+      "why_it_fails": "Ending after the final focusable element is expected behavior.",
+      "impact": "Keyboard users can leave the page naturally once all interactive content has been traversed.",
+      "one_sentence_reason": "The exit transition occurs at the end of the page's focus order."
     }
   ]
 }

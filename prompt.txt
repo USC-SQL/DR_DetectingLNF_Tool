@@ -1,4 +1,4 @@
-Provided to you is a screenshot of the subject website Disney World. Each keyboard-navigable element is numerically labeled in the order a keyboard-only user would navigate through the webpage.
+Provided to you is 5 screenshot of the subject website mozilla. Each keyboard-navigable element is numerically labeled in the order a keyboard-only user would navigate through the webpage.
 
 Your task has two parts:
 

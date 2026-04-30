@@ -6,17 +6,20 @@ import { Upload, FileText, Image } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 function Home() {
-  const [imageFile, setImageFile] = useState(null);
+  const [imageFiles, setImageFiles] = useState([]);
   const [promptFile, setPromptFile] = useState(null);
   const [subjectName, setSubjectName] = useState('');
-  const [image, setImage] = useState(null);
+  const [images, setImages] = useState([]);
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
   const handleImageChange = (e) => {
-    if (e.target.files && e.target.files[0]) {
-      setImageFile(e.target.files[0]);
-      setImage(URL.createObjectURL(e.target.files[0]))
+    //each image appends to the list of images, instead of replacing the previous one
+    if (e.target.files && e.target.files.length > 0) {
+      const newFiles = Array.from(e.target.files);
+      setImageFiles(prev => [...prev, ...newFiles]);
+      setImages(prev => [...prev, ...newFiles.map(f => URL.createObjectURL(f))]);
+      e.target.value = '';
     }
   };
 
@@ -32,7 +35,7 @@ function Home() {
     // console.log('Image file:', imageFile);
     // console.log('Prompt file:', promptFile);
     // navigate('/lnf_result', {state: {image}}); //send the image 
-    if(!imageFile || !promptFile){
+    if(!imageFiles.length || !promptFile){
       return;
     }
 
@@ -40,7 +43,7 @@ function Home() {
       setLoading(true);
       //creates a POST request to backend
       const formData = new FormData();
-      formData.append('image_file', imageFile);
+      imageFiles.forEach(file => formData.append('image_files[]', file));
       formData.append('prompt_file', promptFile);
       formData.append('subject_name', subjectName);
 
@@ -61,7 +64,7 @@ function Home() {
       //go to next page
       navigate('/lnf_result',{
         state:{
-          image,
+          images,
           result: data,
         },
       });
@@ -81,7 +84,7 @@ function Home() {
         <CardHeader>
           <CardTitle className="text-2xl font-bold">LNF Analyzer</CardTitle>
           <CardDescription>
-            Upload an image and a prompt file to get started
+            Upload image(s) and a prompt file to get started
           </CardDescription>
         </CardHeader>
 
@@ -93,19 +96,41 @@ function Home() {
                 <Image className="size-4" />
                 Image File
               </Label>
-              <div className="relative">
-                <input
-                  id="image-upload"
-                  type="file"
-                  accept="image/*"
-                  onChange={handleImageChange}
-                  className="w-full cursor-pointer rounded-md border border-gray-300 bg-white px-3 py-2 text-sm file:mr-4 file:rounded-md file:border-0 file:bg-gray-100 file:px-4 file:py-2 file:text-sm hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-                />
-              </div>
-              {imageFile && (
-                <p className="text-sm text-gray-600">
-                  Selected: {imageFile.name}
-                </p>
+              
+              <input
+                id="image-upload"
+                type="file"
+                accept="image/*"
+                onChange={handleImageChange}
+                className="hidden"
+              />
+              <button
+                type="button"
+                onClick={() => document.getElementById('image-upload').click()}
+                className="flex items-center gap-2 rounded-md border border-gray-300 bg-white px-4 py-2 text-sm hover:border-gray-400"
+              >
+                <Upload className="size-4" />
+                Add Image(s)
+              </button>
+              
+              {imageFiles.length > 0 && (
+                <ul className="text-sm text-gray-600 space-y-1">
+                  {imageFiles.map((file, i) => (
+                    <li key={i} className="flex items-center justify-between">
+                      <span>{file.name}</span>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setImageFiles(prev => prev.filter((_, idx) => idx !== i));
+                          setImages(prev => prev.filter((_, idx) => idx !== i));
+                        }}
+                        className="ml-2 text-red-500 hover:text-red-700 text-xs"
+                      >
+                        Remove
+                      </button>
+                    </li>
+                  ))}
+                </ul>
               )}
             </div>
 
@@ -159,7 +184,7 @@ function Home() {
             <Button
               type="submit"
               className="w-full"
-              disabled={!imageFile || !promptFile || loading}
+              disabled={!imageFiles.length || !promptFile || loading}
             >
               <Upload className="mr-2 size-4" />
               {/* Submit */}
