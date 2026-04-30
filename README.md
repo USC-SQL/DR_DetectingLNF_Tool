@@ -34,7 +34,13 @@ This project evaluates whether keyboard navigation follows a **meaningful, logic
    Replace `your_api_key_here` with your actual key
 
 ### Backend
-Run `python app.py` 
+Install these dependencies first: 
+```
+pip install openai
+pip install flask
+pip install flask_cors
+```
+Then run `python app.py` 
 
 ### Frontend
 ```bash
