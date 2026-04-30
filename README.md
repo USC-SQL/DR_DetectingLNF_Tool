@@ -12,7 +12,7 @@ This project evaluates whether keyboard navigation follows a **meaningful, logic
 ## Overview: How it works
 
 1. User provides:
-   - A **numbered screenshot** of a webpage (focus order labeled) *(ex:`disneyworld.png`)*
+   - **Numbered screenshot(s)** of a webpage (focus order labeled) *(ex:`disneyworld.png`)*
    - A **prompt file** *(`ex: prompt.txt`)*
 
 2. Backend:
