@@ -12,8 +12,8 @@ This project evaluates whether keyboard navigation follows a **meaningful, logic
 ## Overview: How it works
 
 1. User provides:
-   - A **numbered screenshot** of a webpage (focus order labeled) (EX:disneyworld.png)
-   - A **prompt file** (EX: prompt.txt)
+   - A **numbered screenshot** of a webpage (focus order labeled) *(ex:`disneyworld.png`)*
+   - A **prompt file** *(`ex: prompt.txt`)*
 
 2. Backend:
    - Sends screenshot + prompt to an LLM
@@ -28,11 +28,19 @@ This project evaluates whether keyboard navigation follows a **meaningful, logic
 
 ## Installation & Setup
 ### API Key Setup
-1. Create a .env file in the root directory
-2. Add your API key: ```bash OPENAI_API_KEY=your_api_key_here ```
+1. Create a .env file in the root directory `touch .env`
+2. Add your API key:
+   `OPENAI_API_KEY=your_api_key_here `
+   Replace `your_api_key_here` with your actual key
 
 ### Backend
-Run `python app.py` 
+Install these dependencies first: 
+```
+pip install openai
+pip install flask
+pip install flask_cors
+```
+Then run `python app.py` 
 
 ### Frontend
 ```bash
