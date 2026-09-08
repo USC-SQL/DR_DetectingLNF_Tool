@@ -39,6 +39,8 @@ Install these dependencies first:
 pip install openai
 pip install flask
 pip install flask_cors
+pip install python-dotenv
+pip install requests
 ```
 Then run `python app.py` 
 
